@@ -117,7 +117,7 @@ export default function QuizController({ preguntas }: Props) {
     };
 
     const handleTimeout = () => {
-        // finalizar(); // Si se acaba el tiempo, termina el quiz
+        avanzar();
     };
 
     return (

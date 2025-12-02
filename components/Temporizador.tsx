@@ -17,6 +17,7 @@ export default function Temporizador({ duracionSegundos, onTimeout }: Props) {
     useEffect(() => {
         if (tiempo <= 0) {
             onTimeout();
+            setTiempo(duracionSegundos);
             return;
         }
 
