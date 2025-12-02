@@ -1,0 +1,182 @@
+[
+    {
+        "id": "p1",
+        "texto": "¿Cuál es el río más largo del mundo?",
+        "opciones": [
+            { "id": "o1", "texto": "Río Amazonas" },
+            { "id": "o2", "texto": "Río Nilo" },
+            { "id": "o3", "texto": "Río Yangtsé" },
+            { "id": "o4", "texto": "Río Misisipi" }
+        ],
+        "correcta": "o1",
+        "explicacion": "El río Amazonas, ubicado en América del Sur, es considerado el río más largo del mundo según algunas mediciones recientes y además es el que tiene mayor volumen de agua."
+    },
+    {
+        "id": "p2",
+        "texto": "¿En qué continente se encuentra la cordillera del Himalaya?",
+        "opciones": [
+            { "id": "o1", "texto": "Asia" },
+            { "id": "o2", "texto": "Europa" },
+            { "id": "o3", "texto": "América" },
+            { "id": "o4", "texto": "Oceanía" }
+        ],
+        "correcta": "o1",
+        "explicacion": "El Himalaya se encuentra en Asia y es hogar del monte Everest, la montaña más alta del mundo."
+    },
+    {
+        "id": "p3",
+        "texto": "¿Quién pintó la Mona Lisa?",
+        "opciones": [
+            { "id": "o1", "texto": "Vincent van Gogh" },
+            { "id": "o2", "texto": "Leonardo da Vinci" },
+            { "id": "o3", "texto": "Pablo Picasso" },
+            { "id": "o4", "texto": "Claude Monet" }
+        ],
+        "correcta": "o2",
+        "explicacion": "La Mona Lisa es una pintura icónica del Renacimiento italiano realizada por Leonardo da Vinci entre 1503 y 1506."
+    },
+    {
+        "id": "p4",
+        "texto": "¿Cuál es el país más poblado del mundo?",
+        "opciones": [
+            { "id": "o1", "texto": "India" },
+            { "id": "o2", "texto": "China" },
+            { "id": "o3", "texto": "Estados Unidos" },
+            { "id": "o4", "texto": "Indonesia" }
+        ],
+        "correcta": "o1",
+        "explicacion": "India ha superado a China como el país más poblado del mundo, con más de 1.400 millones de habitantes."
+    },
+    {
+        "id": "p5",
+        "texto": "¿En qué año llegó el ser humano a la Luna?",
+        "opciones": [
+            { "id": "o1", "texto": "1965" },
+            { "id": "o2", "texto": "1969" },
+            { "id": "o3", "texto": "1972" },
+            { "id": "o4", "texto": "1959" }
+        ],
+        "correcta": "o2",
+        "explicacion": "El 20 de julio de 1969, los astronautas Neil Armstrong y Buzz Aldrin se convirtieron en los primeros seres humanos en caminar sobre la Luna durante la misión Apolo 11."
+    },
+    {
+        "id": "p6",
+        "texto": "¿Cuál es el metal más ligero?",
+        "opciones": [
+            { "id": "o1", "texto": "Aluminio" },
+            { "id": "o2", "texto": "Hierro" },
+            { "id": "o3", "texto": "Litio" },
+            { "id": "o4", "texto": "Titanio" }
+        ],
+        "correcta": "o3",
+        "explicacion": "El litio es el metal más ligero y se utiliza en baterías recargables y aleaciones especiales debido a su baja densidad."
+    },
+    {
+        "id": "p7",
+        "texto": "¿Qué océano es el más grande del mundo?",
+        "opciones": [
+            { "id": "o1", "texto": "Atlántico" },
+            { "id": "o2", "texto": "Índico" },
+            { "id": "o3", "texto": "Pacífico" },
+            { "id": "o4", "texto": "Ártico" }
+        ],
+        "correcta": "o3",
+        "explicacion": "El océano Pacífico es el más grande del mundo, cubriendo más de 63 millones de millas cuadradas y separando Asia y América."
+    },
+    {
+        "id": "p8",
+        "texto": "¿Cuál es la capital de Canadá?",
+        "opciones": [
+            { "id": "o1", "texto": "Toronto" },
+            { "id": "o2", "texto": "Vancouver" },
+            { "id": "o3", "texto": "Montreal" },
+            { "id": "o4", "texto": "Ottawa" }
+        ],
+        "correcta": "o4",
+        "explicacion": "Ottawa es la capital de Canadá y sede del gobierno federal, aunque ciudades como Toronto y Montreal son más grandes en población."
+    },
+    {
+        "id": "p9",
+        "texto": "¿Qué científico propuso la teoría de la relatividad?",
+        "opciones": [
+            { "id": "o1", "texto": "Isaac Newton" },
+            { "id": "o2", "texto": "Albert Einstein" },
+            { "id": "o3", "texto": "Niels Bohr" },
+            { "id": "o4", "texto": "Galileo Galilei" }
+        ],
+        "correcta": "o2",
+        "explicacion": "Albert Einstein formuló la teoría de la relatividad especial en 1905 y la teoría de la relatividad general en 1915, revolucionando la física moderna."
+    },
+    {
+        "id": "p10",
+        "texto": "¿Cuál es el país más grande del mundo en superficie?",
+        "opciones": [
+            { "id": "o1", "texto": "Canadá" },
+            { "id": "o2", "texto": "Rusia" },
+            { "id": "o3", "texto": "China" },
+            { "id": "o4", "texto": "Estados Unidos" }
+        ],
+        "correcta": "o2",
+        "explicacion": "Rusia es el país más grande del mundo con aproximadamente 17 millones de km², abarcando Europa del Este y gran parte del norte de Asia."
+    },
+    {
+        "id": "p11",
+        "texto": "¿Cuál es el idioma más hablado del mundo como lengua materna?",
+        "opciones": [
+            { "id": "o1", "texto": "Inglés" },
+            { "id": "o2", "texto": "Hindi" },
+            { "id": "o3", "texto": "Mandarín" },
+            { "id": "o4", "texto": "Español" }
+        ],
+        "correcta": "o3",
+        "explicacion": "El mandarín es el idioma más hablado del mundo como lengua materna, principalmente en China, con más de 900 millones de hablantes nativos."
+    },
+    {
+        "id": "p12",
+        "texto": "¿Quién escribió 'Cien años de soledad'?",
+        "opciones": [
+            { "id": "o1", "texto": "Gabriel García Márquez" },
+            { "id": "o2", "texto": "Mario Vargas Llosa" },
+            { "id": "o3", "texto": "Julio Cortázar" },
+            { "id": "o4", "texto": "Pablo Neruda" }
+        ],
+        "correcta": "o1",
+        "explicacion": "'Cien años de soledad' es una novela emblemática del realismo mágico escrita por Gabriel García Márquez en 1967."
+    },
+    {
+        "id": "p13",
+        "texto": "¿Qué animal es el más rápido en tierra?",
+        "opciones": [
+            { "id": "o1", "texto": "León" },
+            { "id": "o2", "texto": "Guepardo" },
+            { "id": "o3", "texto": "Tigre" },
+            { "id": "o4", "texto": "Antílope" }
+        ],
+        "correcta": "o2",
+        "explicacion": "El guepardo puede alcanzar velocidades de hasta 120 km/h en distancias cortas, siendo el animal terrestre más rápido."
+    },
+    {
+        "id": "p14",
+        "texto": "¿Cuál es el planeta más grande del sistema solar?",
+        "opciones": [
+            { "id": "o1", "texto": "Saturno" },
+            { "id": "o2", "texto": "Júpiter" },
+            { "id": "o3", "texto": "Neptuno" },
+            { "id": "o4", "texto": "Urano" }
+        ],
+        "correcta": "o2",
+        "explicacion": "Júpiter es el planeta más grande del sistema solar, con un diámetro de unos 142.984 km y una masa más de 300 veces la de la Tierra."
+    },
+    {
+        "id": "p15",
+        "texto": "¿Dónde se originaron los Juegos Olímpicos?",
+        "opciones": [
+            { "id": "o1", "texto": "Roma" },
+            { "id": "o2", "texto": "Egipto" },
+            { "id": "o3", "texto": "Grecia" },
+            { "id": "o4", "texto": "Mesopotamia" }
+        ],
+        "correcta": "o3",
+        "explicacion": "Los Juegos Olímpicos se originaron en Grecia antigua, en la ciudad de Olimpia, alrededor del año 776 a.C., como una competición religiosa y deportiva."
+    }
+]
