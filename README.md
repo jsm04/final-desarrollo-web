@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Final - Desarrollo Web (Quiz)
 
-## Getting Started
+## Breve descripción
 
-First, run the development server:
+Aplicación tipo quiz desarrollada con Next.js (App Router) y TypeScript. Permite presentar preguntas de opción múltiple, controlar el tiempo por pregunta y mostrar resultados finales con explicación. Ideal para evaluar conocimientos rápidos en interfaz limpia con Tailwind CSS.
+
+## Tecnologías clave
+
+- Framework: Next.js (app directory) — ver [app/layout.tsx](app/layout.tsx) y [app/page.tsx](app/page.tsx)
+- Lenguaje: TypeScript — configuración en [tsconfig.json](tsconfig.json)
+- Estilos: Tailwind CSS — configuración en [postcss.config.mjs](postcss.config.mjs) y [app/globals.css](app/globals.css)
+- Estado global: Context API con proveedor [`QuizProvider`](components/QuizProvider.tsx)
+- Componentes principales:
+  - [`QuizController`](components/QuizController.tsx) — lógica del quiz y temporizador
+  - [`Temporizador`](components/Temporizador.tsx) — cuenta regresiva por pregunta
+  - [`TarjetaPregunta`](components/TarjetaPregunta.tsx) — renderiza cada pregunta y sus opciones
+  - [`OpcionRespuesta`](components/OpcionRespuesta.tsx) — componente de opción
+  - [`ResultadosFinales`](components/ResultadosFinales.tsx) — pantalla de resultados
+
+## Estructura relevante
+
+- Rutas: [app/quiz/page.tsx](app/quiz/page.tsx) (quiz) y [app/resultados/page.tsx](app/resultados/page.tsx) (resultados)
+- Datos: preguntas en [data/preguntas.json](data/preguntas.json) y tipo [`Pregunta`](data/types.ts)
+- Punto de entrada: [app/page.tsx](app/page.tsx)
+
+## Cómo ejecutar (reclutador)
+
+Requisitos: Node.js 20+ (Next.js v16 requiere Node moderno). Se recomienda usar pnpm (hay pnpm-lock.yaml).
+
+1. Instalar dependencias:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Ejecutar en desarrollo:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Abre <http://localhost:3000>
 
-## Learn More
+3. Construir para producción:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+pnpm build
+pnpm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Qué buscar al revisar el código
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+-------------------------------
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Organización por componentes en [components/](components) y separación de datos en [data/](data).
+- Uso de TypeScript con tipos explícitos (`data/types.ts`) y React Context (`QuizProvider`) para compartir resultados.
+- Gestión del flujo del quiz en [`QuizController`](components/QuizController.tsx): selección, avance, puntaje y navegación a resultados.
+- Extensibilidad: agregar/editar preguntas en [data/preguntas.json](data/preguntas.json). Para cambiar la duración por pregunta ver [`Temporizador`](components/Temporizador.tsx) y su uso en [`QuizController`](components/QuizController.tsx).
