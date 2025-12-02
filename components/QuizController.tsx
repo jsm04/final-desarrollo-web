@@ -89,6 +89,7 @@ export default function QuizController({ preguntas }: Props) {
         }
 
         const ultima = state.index === preguntas.length - 1;
+
         if (ultima) {
             finalizar();
             return;
@@ -116,7 +117,7 @@ export default function QuizController({ preguntas }: Props) {
     };
 
     const handleTimeout = () => {
-        finalizar(); // Si se acaba el tiempo, termina el quiz
+        // finalizar(); // Si se acaba el tiempo, termina el quiz
     };
 
     return (
@@ -126,7 +127,11 @@ export default function QuizController({ preguntas }: Props) {
                     Pregunta {state.index + 1} de {preguntas.length}
                 </h2>
 
-                <Temporizador duracionSegundos={30} onTimeout={handleTimeout} />
+                <h2 className="text-xl font-bold mb-4 text-center text-gray-800">
+                    Puntuacion: <span className="text-xl">{state.puntaje}</span>
+                </h2>
+
+                <Temporizador duracionSegundos={5} onTimeout={handleTimeout} />
 
                 <TarjetaPregunta
                     pregunta={preguntaActual}

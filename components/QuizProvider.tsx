@@ -36,7 +36,7 @@ export const QuizProvider = ({ children }: { children: React.ReactNode }) => {
         setPuntaje(0);
         setTotal(0);
         setResultadosState([]);
-        router.push("/quiz"); // Navigate to quiz page
+        router.push("/quiz");
     };
 
     return (
