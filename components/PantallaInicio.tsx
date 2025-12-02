@@ -19,8 +19,8 @@ export default function PantallaInicio() {
                 </h2>
                 <ul className="list-disc list-inside text-gray-700">
                     <li>Preguntas de conocimiento general</li>
-                    <li>Número de preguntas: 10</li>
-                    <li>Tiempo por pregunta: 30 segundos</li>
+                    <li>Número de preguntas: 15</li>
+                    <li>Tiempo por pregunta: 60 segundos</li>
                     <li>Reglas: Sin penalización por error</li>
                 </ul>
             </div>

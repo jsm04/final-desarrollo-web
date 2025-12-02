@@ -131,7 +131,11 @@ export default function QuizController({ preguntas }: Props) {
                     Puntuacion: <span className="text-xl">{state.puntaje}</span>
                 </h2>
 
-                <Temporizador duracionSegundos={5} onTimeout={handleTimeout} />
+                <Temporizador
+                    key={state.index}
+                    duracionSegundos={60}
+                    onTimeout={handleTimeout}
+                />
 
                 <TarjetaPregunta
                     pregunta={preguntaActual}

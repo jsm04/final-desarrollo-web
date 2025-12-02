@@ -1,3 +1,5 @@
+import { useRouter } from "next/navigation";
+
 interface ResultadoPregunta {
     id: string;
     texto: string;
@@ -20,6 +22,7 @@ export default function ResultadosFinales({
     onReiniciar,
 }: Props) {
     const porcentaje = total > 0 ? Math.round((puntaje / total) * 100) : 0;
+    const router = useRouter();
 
     return (
         <div className="max-w-3xl mx-auto p-6">
@@ -80,6 +83,13 @@ export default function ResultadosFinales({
                     className="px-6 py-3 bg-blue-600 text-xl text-white rounded-lg hover:bg-blue-700 transition"
                 >
                     Reiniciar Quiz
+                </button>
+
+                <button
+                    onClick={() => router.push("/")}
+                    className="px-6 py-3 bg-gray-600 text-xl text-white rounded-lg hover:bg-blue-700 transition mx-5"
+                >
+                    Inicio 🏠
                 </button>
             </div>
         </div>
